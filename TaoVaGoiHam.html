@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo và gọi hàm</title>
+</head>
+<body>
+<script>
+    function func1(a){
+        if(a == 2)
+            return 2;
+        return a * func1(a - 1);
+    }   func1(5)
+    alert(func1(5));
+
+    // 5 * func(4)
+    // 5 * 4 * func(3)
+    // 5 * 4 * 3 * func(2)
+    // 5 * 4 * 3 * 2 =120
+</script>
+</body>
+</html>

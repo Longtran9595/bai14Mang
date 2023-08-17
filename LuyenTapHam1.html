@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<script>
+
+    // bài 1
+// function alertMessage(){
+//     alert('xin chào');
+// }
+// alertMessage();
+
+
+    // bài 2
+// function a(x){
+//     x += 1;
+//    return x;
+// }
+// alert(a(2));
+
+
+    // bài 3
+    // function sosanh(a, b){
+    //     if (a > b){
+    //         alert('số thứ 1 lớn hơn số thứ 2')
+    //     } else {alert(`tổng 2 tham số là: ${a+b}`)}
+    // }
+    // sosanh(3,5);
+
+
+    // bài 4
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result);
+    // result = addNumbers();
+    // alert(result);
+    //
+
+// bài 5
+   let Ngoisao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+   let Chomsao = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+   function find(str) {
+       let vitri = Ngoisao.indexOf(str); // tìm vị trí của phần tử trong mảng
+       if (vitri === -1 ) {
+           return 'không tìm thấy';
+       } else {
+           let result = Chomsao[vitri];
+           return result;
+       }
+   }
+   let a = prompt('nhập sao');
+   let kq = find(a);
+   alert(kq);
+</script>
+</body>
+</html>

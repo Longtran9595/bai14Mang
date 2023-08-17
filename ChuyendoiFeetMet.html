@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<script>
+    let feet = +prompt('Nhập feet')
+    let met = +prompt('Nhập mét')
+
+    function f(feet) {
+        b = feet / 3.279;
+        document.write(`${feet} feet = ${b} meter <br>`)
+    }
+
+    f(feet);
+
+    function m(met) {
+        c = met / 0.305;
+        document.write(`${met} met = ${c} feet`)
+    }
+    m(met);
+</script>
+</body>
+</html>
